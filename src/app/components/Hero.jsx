@@ -19,14 +19,14 @@ export default function Hero() {
 
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:9876543210"
+              href="tel:9177615696"
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full text-sm md:text-base"
             >
               Call Now
             </a>
 
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/919177615696"
               className="border border-white hover:bg-white hover:text-black px-8 py-3 rounded-full text-sm md:text-base"
             >
               WhatsApp Us

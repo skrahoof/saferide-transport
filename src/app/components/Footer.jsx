@@ -27,7 +27,7 @@ export default function Footer() {
         <div>
           <h4 className="text-lg font-semibold mb-3">Contact</h4>
           <ul className="space-y-2 text-sm text-blue-100">
-            <li>📞 +91 98765 43210</li>
+            <li>📞 +91 91776 15696</li>
             <li>💬 WhatsApp Available</li>
             <li>📍 City-wide Service</li>
           </ul>

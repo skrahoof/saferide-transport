@@ -6,6 +6,8 @@ import Testimonials from "./components/Testimonials";
 import EnquiryForm from "./components/EnquiryForm";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
+import PricingHighlight from "./components/PricingHighlight";
+
 
 export default function Home() {
   return (
@@ -13,6 +15,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Services />
+      <PricingHighlight />
       <Safety />
       <Testimonials />
       <EnquiryForm />
@@ -21,3 +24,4 @@ export default function Home() {
     </>
   );
 }
+

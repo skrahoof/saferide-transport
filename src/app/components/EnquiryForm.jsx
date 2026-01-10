@@ -30,67 +30,85 @@ Message: ${form.message}`;
   };
 
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="max-w-3xl mx-auto px-4">
-        
-        <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-800">
-          Online Enquiry / Booking
-        </h2>
-        <p className="text-center text-gray-500 mt-2">
-          Fill in your details and we’ll get back to you shortly
-        </p>
+    <>
+      {/* 🔥 GLOBAL FIX FOR MOBILE INPUT TEXT VISIBILITY */}
+      <style jsx global>{`
+        input,
+        textarea,
+        select {
+          -webkit-text-fill-color: #111827 !important;
+        }
+      `}</style>
 
-        <form
-          onSubmit={handleSubmit}
-          className="bg-white mt-10 p-8 rounded-2xl shadow-md space-y-5"
-        >
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            required
-            onChange={handleChange}
-            className="w-full border rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-3xl mx-auto px-4">
 
-          <input
-            type="tel"
-            name="phone"
-            placeholder="Mobile Number"
-            required
-            onChange={handleChange}
-            className="w-full border bg-white text-gray-800 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-800">
+            Online Enquiry / Booking
+          </h2>
+          <p className="text-center text-gray-500 mt-2">
+            Fill in your details and we’ll get back to you shortly
+          </p>
 
-          <select
-            name="service"
-            required
-            onChange={handleChange}
-            className="w-full border bg-white text-gray-800 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          <form
+            onSubmit={handleSubmit}
+            className="bg-white mt-10 p-8 rounded-2xl shadow-md space-y-5"
           >
-            <option value="">Select Service</option>
-            <option>School Pick-Up & Drop</option>
-            <option>Tuition / Coaching</option>
-            <option>Extra-Curricular Activities</option>
-            <option>Office Commute</option>
-            <option>Customized Route</option>
-          </select>
+            {/* Name */}
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              required
+              onChange={handleChange}
+              className="w-full border bg-white text-gray-900 placeholder-gray-500 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
 
-          <textarea
-            name="message"
-            placeholder="Additional Message (optional)"
-            rows="4"
-            onChange={handleChange}
-            className="w-full border bg-white text-gray-800 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"          />
-          <button
-            type="submit"
-            className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-full font-medium"
-          >
-            Submit Enquiry
-          </button>
-        </form>
+            {/* Phone */}
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Mobile Number"
+              required
+              onChange={handleChange}
+              className="w-full border bg-white text-gray-900 placeholder-gray-500 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
 
-      </div>
-    </section>
+            {/* Service */}
+            <select
+              name="service"
+              required
+              onChange={handleChange}
+              className="w-full border bg-white text-gray-900 placeholder-gray-500 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+              <option value="">Select Service</option>
+              <option>School Pick-Up & Drop</option>
+              <option>Tuition / Coaching</option>
+              <option>Extra-Curricular Activities</option>
+              <option>Office Commute</option>
+              <option>Customized Route</option>
+            </select>
+
+            {/* Message */}
+            <textarea
+              name="message"
+              placeholder="Additional Message (optional)"
+              rows="4"
+              onChange={handleChange}
+              className="w-full border bg-white text-gray-900 placeholder-gray-500 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+
+            {/* Submit */}
+            <button
+              type="submit"
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-full font-medium"
+            >
+              Submit Enquiry
+            </button>
+          </form>
+
+        </div>
+      </section>
+    </>
   );
 }

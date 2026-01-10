@@ -1,7 +1,9 @@
+import { CONTACT } from "../config/contact";
+
 export default function WhatsAppButton() {
   return (
     <a
-      href="https://wa.me/919177615696"
+     href={`https://wa.me/${CONTACT.phone}`}
       target="_blank"
       style={styles.button}
     >

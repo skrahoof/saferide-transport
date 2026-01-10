@@ -1,3 +1,5 @@
+import { CONTACT } from "../config/contact";
+
 export default function Footer() {
   return (
     <footer className="bg-blue-600 text-white mt-16">
@@ -27,7 +29,7 @@ export default function Footer() {
         <div>
           <h4 className="text-lg font-semibold mb-3">Contact</h4>
           <ul className="space-y-2 text-sm text-blue-100">
-            <li>📞 +91 91776 15696</li>
+            <li>📞 {CONTACT.displayPhone}</li>
             <li>💬 WhatsApp Available</li>
             <li>📍 City-wide Service</li>
           </ul>

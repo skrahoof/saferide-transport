@@ -1,6 +1,6 @@
 "use client";
-
 import { useState } from "react";
+import { CONTACT } from "../config/contact";
 
 export default function EnquiryForm() {
   const [form, setForm] = useState({
@@ -24,10 +24,10 @@ Service: ${form.service}%0A
 Message: ${form.message}`;
 
     window.open(
-      `https://wa.me/919177615696?text=${text}`,
-      "_blank"
-    );
-  };
+  `https://wa.me/${CONTACT.phone}?text=${text}`,
+  "_blank"
+);  
+};
 
   return (
     <>

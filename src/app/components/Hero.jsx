@@ -1,3 +1,5 @@
+import { CONTACT } from "../config/contact";
+
 export default function Hero() {
   return (
     <section
@@ -20,7 +22,7 @@ export default function Hero() {
 
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:9177615696"
+              href={`tel:${CONTACT.phone}`}
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full text-sm md:text-base"
             >
               Call Now

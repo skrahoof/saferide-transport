@@ -24,7 +24,7 @@ Service: ${form.service}%0A
 Message: ${form.message}`;
 
     window.open(
-      `https://wa.me/91XXXXXXXXXX?text=${text}`,
+      `https://wa.me/919177615696?text=${text}`,
       "_blank"
     );
   };
@@ -59,14 +59,14 @@ Message: ${form.message}`;
             placeholder="Mobile Number"
             required
             onChange={handleChange}
-            className="w-full border rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full border bg-white text-gray-800 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
 
           <select
             name="service"
             required
             onChange={handleChange}
-            className="w-full border rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full border bg-white text-gray-800 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
           >
             <option value="">Select Service</option>
             <option>School Pick-Up & Drop</option>
@@ -81,9 +81,7 @@ Message: ${form.message}`;
             placeholder="Additional Message (optional)"
             rows="4"
             onChange={handleChange}
-            className="w-full border rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
-
+            className="w-full border bg-white text-gray-800 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"          />
           <button
             type="submit"
             className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-full font-medium"

@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
     className="relative min-h-screen bg-cover bg-center"
-    style={{ backgroundImage: "url('/hero.jpg')" }}
+    style={{ backgroundImage: "url('/hero1.jpg')" }}
   >
 
       {/* Overlay */}

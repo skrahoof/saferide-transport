@@ -1,9 +1,17 @@
 import "./globals.css";
+import { Inter } from "next/font/google";
 
+/* 🔹 Professional font for trust & readability */
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+/* 🔹 SEO Metadata */
 export const metadata = {
   title: "SafeRide Transport | Safe Pick-Up & Drop Services",
   description:
-    "Safe, reliable and affordable pick-up and drop transportation services for schools, tuition centers, extra-curricular activities and office commute. Lady drivers preferred for child and women safety.",
+    "Safe, reliable and affordable pick-up and drop transportation services for schools, tuition centers, extra-curricular activities and daily commutes. Lady drivers preferred for child and women safety.",
 
   keywords: [
     "school pick up drop service",
@@ -17,7 +25,7 @@ export const metadata = {
   openGraph: {
     title: "SafeRide Transport",
     description:
-      "Safe and reliable pick-up & drop services with lady drivers preferred for children and women safety.",
+      "Safe and reliable pick-up & drop services with trusted lady drivers for complete peace of mind.",
     type: "website",
   },
 };
@@ -25,7 +33,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={inter.className}>
+        {children}
+      </body>
     </html>
   );
 }
